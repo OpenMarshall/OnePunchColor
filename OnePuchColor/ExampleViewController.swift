@@ -19,9 +19,10 @@ class ExampleViewController: UIViewController {
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        UIView.animateWithDuration (2, animations: {
-            self.view.backgroundColor = UIColor.onePunchColor()
-        })
+        // quick version
+//        self.view.punch()
+        // slow version
+        self.view.punchWithInterval(2)
     }
 }
 

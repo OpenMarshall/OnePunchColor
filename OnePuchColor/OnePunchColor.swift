@@ -8,6 +8,18 @@
 
 import UIKit
 
+extension UIView {
+    func punch() {
+        self.backgroundColor = UIColor.onePunchColor()
+    }
+    
+    func punchWithInterval (interval:NSTimeInterval) {
+        UIView.animateWithDuration (interval, animations: {
+            self.punch()
+        })
+    }
+}
+
 
 extension UIColor {
     class func onePunchColor() -> UIColor {
@@ -16,6 +28,7 @@ extension UIColor {
         return onePunchColors[randomRoll]
     }
 }
+
 
 private let onePunchColors = [
     UIColor(red:0.55, green:0.27, blue:0.64, alpha:1),
