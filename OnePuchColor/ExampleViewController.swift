@@ -14,11 +14,11 @@ class ExampleViewController: UIViewController {
         super.viewDidLoad()
     }
 
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return true
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         // quick version
 //        self.view.punch()
         // slow version

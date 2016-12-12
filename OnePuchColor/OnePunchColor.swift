@@ -13,8 +13,8 @@ extension UIView {
         self.backgroundColor = UIColor.onePunchColor()
     }
     
-    func punchWithInterval (interval:NSTimeInterval) {
-        UIView.animateWithDuration (interval, animations: {
+    func punchWithInterval (_ interval:TimeInterval) {
+        UIView.animate (withDuration: interval, animations: {
             self.punch()
         })
     }
